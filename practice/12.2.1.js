@@ -100,10 +100,10 @@ var sortedAge = familyAge.sort((anElement,anotherElement) => anElement -
 anotherElement);
 console.log(sortedAge);
 
-// append reverse to a sort (need help)
+// append reverse to a sort
 var familyAge = [3,2,39,37,9];
-var sortedAge = familyAge.sort.reverse((anElement,anotherElement) => anElement -
-anotherElement);
+var sortedAge = familyAge.sort((anElement,anotherElement) => anElement -
+anotherElement).reverse();
 console.log(sortedAge);
 
 // SLICING
