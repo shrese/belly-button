@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Events</title>
-  <!-- add d3 and plotly -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-  <!-- create dropdown menu -->
-  <div id="menu"></div>
-  <select id = "selectOption">
-    <option value = "option1">FIrst Option</option>
-    <option value = "option2">Second Option</option>
+  <div id="plot"></div>
+  <select id="dropdownMenu">
+    <option value="dataset1">DataSet1</option>
+    <option value="dataset2">DataSet2</option>
   </select>
-<script scr="script.js"></script>
+  <script src="plot.js"></script>
 </body>
 </html>
