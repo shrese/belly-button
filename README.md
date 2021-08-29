@@ -23,4 +23,6 @@ Potential upgrades to site:
 3. More analysis around the data in the .json file including but not limited to age, ethnicity, and location.
 4. And so...so much more.
 
+footnote: I tried to get the margins of my demographic data to align with the heading, but failed.
+
 
