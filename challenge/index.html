@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<!-- color of the background of the webpage -->
+
+<body style="background-color: #EFF8FB;">
+
+  <!-- DELIVERABLE 4 - jumbotron with image -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron">
+        <h1>
+          <large>
+            <p class="font-weight-bold">Belly Button Biodiversity Dashboard</p>
+          </large>
+        </h1>
+        <large>
+          <p class="lead"> Use the interactive charts below to explore the dataset</p>
+        </large>
+      </div>
+    </div>
+
+    <!-- filter by subject -->
+    <div class="row">
+      <div class="col-md-5">
+        <div class="well">
+          <div style="background: #0489B1; 
+                        font-size: 20px; 
+                        padding: 10px; 
+                        border: 1px solid lightgray; 
+                        margin: 10px;">
+            <h5>Test Subject ID Number:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+
+          <!-- demographic info box -->
+          <div class="panel panel-primary">
+            <!-- <div class="panel-heading"> -->
+            <h5>
+              <p style=color:black class="panel-title">Demographic Info</p>
+            </h5>
+          </div>
+          <div style=color:black id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <!-- guage chart -->
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <div id="guagePlot"></div>
+        </br><br>
+      </div>
+
+      <!-- other charts -->
+        <div class="col-md-12">
+          <div class="well">
+            <!-- bar chart -->
+            <div id="bar"></div>
+            <div id=barPlot></div>
+            </br><br>
+
+            <!-- bubble chart -->
+            <div id="bubble"></div>
+            <div id="bubblePlot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="barPlot"></div>
+    <div id="bubblePlot"></div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="charts.js"></script>
+
+</body>
+
+</html>

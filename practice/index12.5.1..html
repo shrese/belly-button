@@ -1,3 +1,4 @@
+<!-- starter code for website (click ! and enter) -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- add title to webpage and link to bootstrap CDN -->
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -13,16 +15,18 @@
 
   <div class="container">
     <div class="row">
+      <!-- add the header with formatting -->
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    <!-- add filter with headings and titles -->
     <div class="row">
       <div class="col-md-12">
         <div class="well">
           <h10>Test Subject ID No.:</h10>
-          <!-- <select id="selDataset"></select> -->
+          <!-- <select id="selDataset"></select> this creates two html elements- dropdown menue and panel for the infomation displayed -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
