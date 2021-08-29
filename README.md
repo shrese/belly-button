@@ -11,7 +11,7 @@ We were also to add some customization.  I included:
 * Changes to margins and charts so that they fit evenly on the page
 * Added breaks so that there is space between charts
 * Added color to the background and other features of the site
-* Added a boarder to one of the items in the site
+* Added a border to one of the items in the site
 
 
 ## Summary
