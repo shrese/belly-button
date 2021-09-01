@@ -93,7 +93,9 @@ function buildCharts(sample) {
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
+      paper_bgcolor: "#ffffff00",
       title: "Top 10 Bacteria Cultures Found",
+      plot_bgcolor: "#ffffff00",
       yaxis: {
         tickmode: "array",
         tickvals: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -128,8 +130,10 @@ function buildCharts(sample) {
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
+      paper_bgcolor: "#72fa4100",
       title: "Bacteria Cultures Per Sample",
       showlegend: false,
+      plot_bgcolor: "#ffffff00",
       xaxis: { title: "OTU ID", automargin: true },
       yaxis: { automargin: true },
       hovermode: "closest",
@@ -182,6 +186,7 @@ function buildCharts(sample) {
 
     // 4. Create the layout for the gauge chart.
     var gaugeLayout = {
+      paper_bgcolor: "#ffffff00",
       width: 650,
       height: 500,
       margin: { t: 0, b: 0 }
